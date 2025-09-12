@@ -1,0 +1,132 @@
+.buton:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #00218b;
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+.buton:hover:before{
+  width: 100%;
+}
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+.hover\:underline-animation {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover\:underline-animation::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffd000; /* Culoare underline */
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.hover\:underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.animatie-code{
+  position:absolute;
+  width:10rem;
+  right:7rem;
+  top:130vh;
+  animation: animated-floating 1s linear infinite;
+  animation-direction: alternate;
+}
+.animatie-circle{
+  position:absolute;
+  width:3rem;
+  left:7rem;
+  top:270vh;
+  animation: animated-floating 1s linear infinite;
+  animation-direction: alternate;
+}
+.animatie-fig{
+  position:absolute;
+  width:10rem;
+  right:7rem;
+  top:310vh;
+  animation: animated-floating 1s linear infinite;
+  animation-direction: alternate;
+}
+.animatie-pipe{
+  position:absolute;
+  width:10rem;
+  left:5rem;
+  top:174vh;
+  animation: spinner 15s infinite alternate;
+}
+.animatie-float{
+  position:absolute;
+  top:270vh;
+  left:6rem;
+  animation:float 1s linear infinite alternate;
+  
+}
+@keyframes animated-floating {
+  0%{
+    transform: translateY(0);
+    opacity:1;
+  }
+  100%{
+    transform: translateY(2vh);
+    opacity:1;
+  }
+}
+@keyframes spinner{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(240deg);
+  }
+  
+}
+@keyframes float{
+  0%{
+    transform:translateX(0);
+
+  }
+  100%{
+    transform: translateX(2vh);
+  }
+}
+img.spin-y {
+    transition: transform 2s ease;
+    transform-style: preserve-3d;  
+    backface-visibility: visible;  
+  }
+  
+  img.spin-y:hover {
+    transform: rotateY(360deg); 
+  }
+
+  .typewriter::after {
+      content: '|';
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 50%, 100% { opacity: 1; }
+      25%, 75% { opacity: 0; }
+    }
