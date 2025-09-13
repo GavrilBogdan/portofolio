@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GB | Vreau un site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e594cd51e4.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+      }
+      .floating { animation: float 6s ease-in-out infinite; }
+    </style>
+  </head>
+  <body
+    class="font-[Poppins] bg-gradient-to-br from-black via-gray-900 to-gray-800 flex justify-center items-center min-h-screen overflow-hidden relative px-2 sm:px-0"
+  >
+    <!-- Go Back -->
+    <a href="index.html"
+      class="absolute font-bold top-2 left-2 sm:top-4 sm:left-4 px-3 py-2 sm:px-4 sm:py-2 rounded-lg border border-gray-300 text-white transition duration-300 hover:bg-white hover:text-black z-50 text-sm sm:text-base">
+      ← Go Back
+    </a>
+
+    <!-- Background floating shapes -->
+  <div class="absolute w-40 h-40 sm:w-72 sm:h-72 bg-purple-600 rounded-full blur-3xl opacity-20 floating -top-10 -left-10 sm:-top-20 sm:-left-20"></div>
+  <div class="absolute w-56 h-56 sm:w-96 sm:h-96 bg-indigo-600 rounded-full blur-3xl opacity-20 floating -bottom-20 -right-20 sm:bottom-[-150px] sm:right-[-150px]"></div>
+
+    <!-- Contact Card -->
+    <div
+      class="relative z-10 backdrop-blur-lg bg-white/10 p-4 sm:p-10 rounded-2xl shadow-2xl max-w-xs sm:max-w-xl w-full text-center border border-white/20 mx-auto my-6 sm:my-0"
+    >
+      <h2 class="text-white font-bold text-2xl sm:text-3xl mb-4 sm:mb-6">Cum putem lua legătura?</h2>
+
+      <div class="space-y-3 sm:space-y-4 text-white font-semibold text-sm sm:text-base">
+        <p>📧 Email: <a href="mailto:gavrilbogdan35@yahoo.com" class="underline hover:text-indigo-400 break-all">gavrilbogdan35@yahoo.com</a></p>
+        <p>📱 Telefon: <a href="tel:0736810678" class="underline hover:text-indigo-400">0736 810 678</a></p>
+        <p>💬 WhatsApp: <a href="https://wa.me/0736810678" target="_blank" class="underline hover:text-indigo-400">Click aici</a></p>
+      </div>
+
+      <!-- CTA button -->
+      <a href="mailto:gavrilbogdan35@yahoo.com"
+        class="mt-6 sm:mt-8 inline-block px-6 sm:px-8 py-2.5 sm:py-3 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-full text-white font-bold shadow-lg hover:scale-105 transition text-base sm:text-lg">
+        📩 Trimite-mi un mesaj
+      </a>
+
+      <!-- Social icons -->
+      <div class="flex justify-center gap-4 sm:gap-6 mt-6 sm:mt-8 text-white text-xl sm:text-2xl">
+        <a href="https://github.com/GavrilBogdan" target="_blank" class="p-2 sm:p-3 bg-white/10 rounded-full hover:bg-indigo-600 hover:scale-110 transition"><i class="fab fa-github"></i></a>
+  <a href="https://www.instagram.com/gavril__bogdan/" target="_blank" class="p-2 sm:p-3 bg-white/10 rounded-full hover:bg-indigo-600 hover:scale-110 transition"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <!-- WhatsApp floating button -->
+    <img src="images/WhatsApp.svg.png" alt="WhatsApp"
+      class="fixed bottom-3 right-3 sm:bottom-5 sm:right-5 w-12 h-12 sm:w-16 sm:h-16 z-50 cursor-pointer hover:scale-110 transition-transform"
+      onclick="window.location.href='https://wa.me/0736810678'"/>
+  </body>
+</html>
+
+
